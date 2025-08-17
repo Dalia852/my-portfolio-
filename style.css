@@ -1,0 +1,305 @@
+ * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background-color: #222;
+    }
+
+    .nav-left a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      font-family: cursive;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1rem;
+      transition: color 0.4s;
+    }
+
+    .nav-links li a:hover {
+      color: #426571;
+    }
+
+    /* Section system */
+    .section {
+      display: none;
+      min-height: 100vh;
+      padding: 60px 0 60px 0;
+    }
+
+    .section.active {
+      display: block;
+    }
+
+    /* Profile section (home) */
+    #profile {
+      background-image: url('./coolbackgrounds-fractalize-ranger_made.png');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .overlay {
+      /* height: 100%; */
+      /* width:100%; */
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .prof-content {
+      display: flex;
+      /* justify-content:left; */
+      gap: 50px;
+      /* align-items: center; */
+      /* flex-wrap: wrap; */
+      padding: 40px;
+    }
+
+    .prof-image img{
+      width: 250px;
+      border-radius: 50%;
+      border: 4px solid white;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .prof-text {
+      max-width: 600px;
+    }
+
+    .prof-text p {
+      font-size: 1.8rem;
+      line-height: 1.6;
+    }
+
+/* ABOUT ME */
+#about {
+  position: relative;
+  overflow: hidden;
+  background-color: #111;
+  height: 100vh;
+  padding: 0;
+}
+.split-screen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.bg-side, .upper-side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px #000;
+}
+.bg-side {
+  background-image: url('./Moss.jpg'); 
+  z-index: 1;
+  display: flex;
+  gap: 20px;
+}
+.bg-side p{
+  width: 50%;
+  font-size: 25px;
+}
+.bg-side img{
+  border-radius: 50%;
+}
+.upper-side {
+  background-image: url('./coolbackgrounds-fractalize-wooded_flora.png'); 
+  z-index: 2;
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+  transition: clip-path 0.2s ease-out;
+}
+.teach{
+  position: relative;
+  bottom: 200px;
+  right: 100px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.research{
+  position: relative;
+  right: 50px;
+  bottom: 100px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.developer{
+  position: relative;
+  right: 500px;
+  top: 150px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.upper-side h1{
+  padding-left: 40px;
+}
+
+    
+
+/* EXPERIENCE  */
+#experience {
+  background-image: url('./coolbackgrounds-fractalize-clear_lagoon.png');
+  background-size: cover;
+  color: white;
+}
+.experience-container {
+  width: 70%;
+  margin: 0 auto;
+}
+.exper-title {
+  margin-bottom: 20px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.exper-btn {
+  background-color: #309896;
+  color: white;
+  cursor: pointer;
+  padding: 15px 20px;
+  width: 100%;
+  text-align: left;
+  font-size: 1.2rem;
+  border: none;
+  transition: background 0.3s ease;
+}
+.exper-btn:hover {
+  background-color: #185f6c;
+}
+.exper-content {
+  background-color: #092444;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s ease;
+  padding: 0 20px;
+}
+.exper-content ul {
+  padding: 15px 0;
+  padding-left: 20px;
+}
+.exper-content a {
+  display: block;
+  padding: 15px 0;
+  color: #74c0fc;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.exper-content a:hover {
+  text-decoration: underline;
+}
+
+
+/* contact */
+#contact{
+  background-image: url('./coolbackgrounds-fractalize-sea_edge.png');
+  background-size: cover;
+}
+.contact-container{
+ display: flex; 
+ justify-content: space-around; 
+ align-items: center;
+}
+.contact-list {
+  list-style: none;
+}
+.contact-list li {
+  margin-bottom: 20px;
+}
+.contact-list a {
+  font-size: 1.2rem;
+  color: #313e3a;
+  font-weight: bold;
+  font-family: cursive;
+  text-decoration: none;
+}
+.contact-list i {
+  font-size: 1.5rem;
+}
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 30%;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #333;
+  color: white;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+.contact-form button {
+  padding: 12px;
+  background-color: #426571;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.contact-form button:hover {
+  background-color: #5f85a3;
+}
+
+
+    
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

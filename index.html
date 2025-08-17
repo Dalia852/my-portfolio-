@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="#" onclick="showSection('profile')">Dalya Sayma</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#" onclick="showSection('about')">About Me</a></li>
+      <li><a href="#" onclick="showSection('experience')">Experience</a></li>
+      <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- PROFILE -->
+  <section id="profile" class="section">
+    <div class="overlay">
+      <div class="prof-content">
+        <div class="prof-image">
+          <img src="./my photo1.jpg" alt="Dalya Sayma" />
+        </div>
+        <div class="prof-text">
+          <p>
+            With a background in scientific research, data analysis, and education, I bring a cross-disciplinary approach to full stack development.
+            My work has always centered around problem-solving, clear communication, and critical thinking — skills I now apply to building efficient,
+            user-focused web applications.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="split-screen">
+      <div class="bg-side">
+        <img src="./mine3.jpg" alt="aboutme" width="400px" height="400px">
+        <p>I began my journey in the world of science and education — first as a teacher, then as a researcher in nanotechnology. I spent years immersed in academic writing, data analysis, and helping others understand complex ideas. But while teaching and researching, I realized I was most drawn to solving problems creatively and building things that could have real, immediate impact. That curiosity led me to web development. Now, I’m channeling everything I’ve learned — from clear communication to critical thinking — into coding and creating user-centered digital experiences. My path has never been linear, but every step has prepared me for this one.</p>
+      </div>
+      <div class="upper-side">
+        <h1>Teacher | Researcher | Developer</h1>
+        <img class="teach" src="./teaching.jpg" alt="teaching" width="250px" height="250px">
+        <img class="research" src="./research.jpg" alt="research" width="250px" height="250px">
+        <img class="developer" src="./fullstack.png" alt="developer" width="250px" height="250px">
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  
+  <section id="experience" class="section">
+    <div class="overlay2">
+    <div class="experience-container">
+    <div class="exper-title">
+      <button class="exper-btn">Work Experience</button>
+      <div class="exper-content">
+        <ul>
+          <li>Educator–  Al Rawda College and School, Palestine | Aug 2024 - Jan 2025</li>
+          <li>Graduate Researcher – Bilkent University, Turkey | Oct 2021 - Feb 2024</li>
+          <li>Math Teacher – Gokkuşağı International School | Aug 2022 - Feb 2023</li>
+          <li>English Teacher –  Pioneers Baccalaureate School | Jan 2021 - Oct 2021</li>
+          <li>Physics and Math Teacher –  Modern English School | Aug 2019 - June 2020</li>
+        </ul>
+      </div>
+    </div>
+    <div class="exper-title">
+      <button class="exper-btn">Education</button>
+      <div class="exper-content">
+        <ul>
+          <li>BSc in Materials Engineering -  Bilkent University, Turkey | 2021-2024 | GPA: 3.9/4</li>
+          <li>MSc in Materials Science & Nanotechnology -  Al Najah National University, Palestine | 2014-2019 | GPA: 3.11/4</li>
+          <li>BA in English Language - Al Quds Open University, Palestine | 2015-2018 | GPA: 86/100</li>
+        </ul>
+      </div>
+    </div>
+    <div class="exper-title">
+      <button class="exper-btn">Technical and Soft Skills</button>
+      <div class="exper-content">
+        <ul>
+          <li>HTML, CSS, JavaScript, Python (Full Stack in Progress)</li>
+          <li>Software: Microsoft Office, Slack, Zoom, Microsoft Teams</li>
+          <li>Project Coordination and Optimization | Cross-Disciplinary Collaboration | Problem-Solving & Analytical Thinking | Communication Skills</li>
+          <li>Data Analysis: SPSS, PSPP, ImageJ, Excel, Origin, data analytics certificate(brainnest, Germany)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="exper-title">
+      <button class="exper-btn">Download CV</button>
+      <div class="exper-content">
+        <a href="./Copy of Dalya Sayma CV (3).pdf" download>Click here to download my CV (PDF)</a>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="contact-container">
+      <div class="contact-content">
+        <!-- Contact Info -->
+        <ul class="contact-list">
+          <li>
+            <a href="tel:+970599967616" target="_blank">
+              <i class="fas fa-phone"></i>
+              <span>+970-599-967-616</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/dalia-m-636780238/" target="_blank">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Dalia852" target="_blank">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a href="daliasaymah@gmail.com">
+              <i class="fas fa-envelope"></i>
+              <span>daliasaymah@gmail.com</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </div>
+  </div>
+</section>
+<script src="script.js"></script> 
+</body>
+</html>
